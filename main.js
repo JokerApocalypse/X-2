@@ -111,7 +111,7 @@ async function startXeony() {
         const latensii = speed() - timestampi;
         const user = simple.getUserName(XeonBotInc.callbackQuery.from);
         const pushname = user.full_name;
-        const username = user.username ? user.username : "x-tech";
+        const username = user.username ? user.username : "DGXeon";
         const isCreator = [XeonBotInc.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(username);
         
         const reply = async (text) => {
@@ -139,10 +139,10 @@ async function startXeony() {
             inline_keyboard: [
                 [{
                     text: 'OWNER 🦄',
-                    url: "https://t.me/xtechcorporation1"
+                    url: "https://t.me/DGXeon"
                 }, {
                     text: 'CHANNEL 🤙',
-                    url: "https://whatsapp.com/channel/0029VadaaRZK5cDOTh6sMD41"
+                    url: "https://t.me/+WEsVdEN2B9w4ZjA9"
                 }]
             ]
         }
@@ -275,7 +275,7 @@ Developer : @DGXeon`;
             "Username": "@" + getme.username,
             "ID": getme.id,
             "Link": `https://t.me/${getme.username}`,
-            "Author": "https://t.me/xtechcorporation1"
+            "Author": "https://t.me/DGXeon"
         })
     })
     
@@ -368,7 +368,7 @@ XeonSession()
             console.log(chalk.blue.bold(`Connecting...`));
         } else if (connection === "open") {
 console.log(chalk.blue.bold(`Connected to ${XeonBotInc.user.id.split(":")[0]}`));
-            XeonBotInc.sendMessage("2250141513296@s.whatsapp.net", { text: `🦄 Telegram bot connected!!` });
+            XeonBotInc.sendMessage("916909137213@s.whatsapp.net", { text: `🦄 Telegram bot connected!!` });
             resolve(XeonBotInc);
         }
     });
